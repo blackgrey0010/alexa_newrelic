@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Alexa + New Relic : Have Alexa tell you current New Relic stats!">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Alexa + New Relic</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/kpeth/alexa_newrelic">View on GitHub</a>
+
+          <h1 id="project_title">Alexa + New Relic</h1>
+          <h2 id="project_tagline">Have Alexa tell you current New Relic stats!</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/kpeth/alexa_newrelic/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/kpeth/alexa_newrelic/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="project-overview" class="anchor" href="#project-overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Overview</h3>
+
+<p>Integrate NR metrics from NRQL query into a custom skill on the Alexa system (Amazon Echo).</p>
+
+<h3>
+<a id="α-goal" class="anchor" href="#%CE%B1-goal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>α Goal:</h3>
+
+<p>Using the Alexa SDK + Amazon Lambda + a NR Insights query (via API) program the Alexa system to return NR metric about an application.
+Proof of Concept: </p>
+
+<ul>
+<li>Get Alexa to recognize New Relic as a custom skill</li>
+<li>Get Alexa to query NR Insights via the API key linked to NR Demo application </li>
+<li>Get Alexa to speak the results of the query</li>
+</ul>
+
+<h3>
+<a id="current-active-phrases" class="anchor" href="#current-active-phrases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current Active Phrases:</h3>
+
+<p>"Alexa, Ask New Relic what is the response time of my application ?"</p>
+
+<ul>
+<li>NRQL query of the NR Demo App via API</li>
+<li>Returns average response time from 1 hour ago</li>
+</ul>
+
+<p>"Alexa, Ask New Relic what is the revenue of my application?"</p>
+
+<ul>
+<li>NRQL query of the NR Demo App via API</li>
+<li>Returns total revenue </li>
+</ul>
+
+<h3>
+<a id="next-steps" class="anchor" href="#next-steps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Next Steps:</h3>
+
+<ul>
+<li>Add more metrics that can be queried</li>
+<li>Adjust number verbiage to natural language rounding (ie: 512,433 dollars = 512 thousand dollars)</li>
+<li>Add aggregate queries into 'digest' format for a quick run-down of top metrics of a category</li>
+<li>Add information based requests (non-NRQL query) that describe NR products</li>
+<li>Figure out API key insertion so that this can be opened up to others to use via the Alexa Skills List</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Alexa + New Relic maintained by <a href="https://github.com/kpeth">kpeth</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
